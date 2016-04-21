@@ -44,5 +44,23 @@
     transition-duration: 0.2s;
 }
 
+#barrasup{
+    color: whitesmoke;
+    background-color: darkmagenta;
+    font-weight: bold;
+    font-style: italic;
+}
+#titulofi{
+    text-align: left;
+    margin-left: 2%;
+}
+#titulopro{
+    text-align: right;
+    margin-right: 2%;
+}
 
-
+#formulario{
+        background-color: whitesmoke;
+        text-align: center;
+    
+}
