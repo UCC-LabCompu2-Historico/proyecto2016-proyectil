@@ -5,20 +5,24 @@
     margin-top: 5%;
     padding-top: 5%;
     text-align: center;
+    font-size: 30px;
 }
 #boton1{
     background-color: white;
+    padding: 15px 25px;
+    font-size: 14px;
     color: black;
     border: 2px solid #8b008b
+
 }
 #boton1:hover{
     background-color: darkmagenta;
     font-family: helvetica;
     color: white;
-    padding: 10px 20px;
+    padding: 18px 27px;
     text-aling: center;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     border: none;
     background-color: darkmagenta;
     color: white;
@@ -27,6 +31,8 @@
 }
 #boton2{
     background-color: white;
+    padding: 15px 25px;
+    font-size: 14px;
     color: black;
     border: 2px solid #006400
 }
@@ -35,10 +41,10 @@
     background-color: darkgreen;
     font-family: helvetica;
     color: white;
-    padding: 10px 20px;
+    padding: 18px 27px;
     text-aling: center;
     display: inline-block;
-    font-size: 12px;
+    font-size: 15px;
     border: none;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
@@ -64,3 +70,12 @@
         text-align: center;
     
 }
+
+#barrainf{
+    color: whitesmoke;
+    background-color: darkmagenta;
+    font-weight: lighter;
+    font-family: "Helvetica Neue";
+    text-align: right;
+    align-content: flex-end;
+
