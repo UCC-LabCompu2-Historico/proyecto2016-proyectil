@@ -17,16 +17,13 @@
 #divformulario{
     background-color: lightgray;
     text-align: center;
-    text-decoration: dotted;
     font-family: Helvetica;
 }
-#formu{
 
-
-
-}
 #boton3{
     background-color: transparent;
+    font-size: 11px;
+    padding: 12px 20px;
     color: darkmagenta;
     border: 2px solid #8b008b;
 }
@@ -35,10 +32,10 @@
     background-color: darkmagenta;
     font-family: helvetica;
     color: white;
-    padding: 10px 20px;
+    padding: 14px 22px;
     text-aling: center;
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
     border: none;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
