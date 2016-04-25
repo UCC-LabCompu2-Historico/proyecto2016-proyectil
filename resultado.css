@@ -1,0 +1,42 @@
+#barrasup{
+    color: whitesmoke;
+    background-color: darkmagenta;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Helvetica;
+}
+#titulofi{
+    text-align: left;
+    margin-left: 2%;
+}
+#titulopro {
+    text-align: right;
+    margin-right: 2%;
+}
+
+#grafico{
+    padding: 25%;
+}
+#recalcular{
+    background-color: darkmagenta;
+}
+
+#recal1{
+    align-content: space-between;
+    background-color: whitesmoke;
+    padding: 10px 15px;
+    font-family: Helvetica;
+    font-style: bold;
+    color: darkmagenta;
+
+
+}
+#recal2{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px 15px;
+    font-family: Helvetica;
+    font-style: bold;
+    color: darkmagenta;
+
+}
