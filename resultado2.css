@@ -13,7 +13,6 @@
     text-align: right;
     margin-right: 2%;
 }
-
 #grafico{
     padding: 25%;
 }
@@ -22,7 +21,8 @@
 }
 
 #recal1{
-    align-content: space-between;
+    color: whitesmoke;
+    horiz-align: right;
     background-color: whitesmoke;
     padding: 10px 15px;
     font-family: Helvetica;
@@ -32,7 +32,7 @@
 
 }
 #recal2{
-    text-align: center;
+    color: whitesmoke;
     background-color: whitesmoke;
     padding: 10px 15px;
     font-family: Helvetica;
@@ -46,7 +46,8 @@
     font-size: 16px;
     padding: 15px 22px;
     color: darkmagenta;
-    border: 2px solid #f5f5f5;
+    border: none;
+    alignment: center;
 }
 
 #boton5:hover{
@@ -57,7 +58,7 @@
     text-aling: center;
     display: inline-block;
     font-size: 16px;
-    border: none;
+    border: 2px solid #f5f5f5;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
