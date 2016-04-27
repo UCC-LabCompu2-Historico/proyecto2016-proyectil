@@ -1,0 +1,66 @@
+#expl{
+    background-color: whitesmoke;
+    color: black;
+    font-family: Helvetica;
+    padding: 200px 50px;
+    font-size: 20px;
+    text-align: center;
+}
+#barrasup{
+    color: whitesmoke;
+    background-color: darkmagenta;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Helvetica;
+}
+#titulofi{
+    text-align: left;
+    margin-left: 2%;
+}
+#titulopro {
+    text-align: right;
+    margin-right: 2%;
+}
+
+#boton1{
+    background-color: transparent;
+    padding: 15px 25px;
+    font-size: 14px;
+    color: black;
+    border: 2px solid #8b008b
+
+}
+#boton1:hover{
+    background-color: darkmagenta;
+    font-family: helvetica;
+    color: white;
+    padding: 18px 27px;
+    text-aling: center;
+    display: inline-block;
+    font-size: 15px;
+    border: none;
+    background-color: darkmagenta;
+    color: white;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+#boton2{
+    background-color: transparent;
+    padding: 15px 25px;
+    font-size: 14px;
+    color: black;
+    border: 2px solid #006400
+}
+
+#boton2:hover{
+    background-color: darkgreen;
+    font-family: helvetica;
+    color: white;
+    padding: 18px 27px;
+    text-aling: center;
+    display: inline-block;
+    font-size: 15px;
+    border: none;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
