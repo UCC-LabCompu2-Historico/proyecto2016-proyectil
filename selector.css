@@ -15,9 +15,12 @@
 }
 
 #divformulario{
+    font-family: Helvetica;
+    font-size: 25px;
     background-color: lightgray;
     text-align: center;
     font-family: Helvetica;
+    padding: 14%;
 }
 
 #boton3{
