@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="formulario.css" type="text/css">
+<head>
+    <script src="formulario.js"></script>
+    <meta charset="UTF-8">
+    <title>Tiro Proyectil</title>
+</head>
+<body>
+
+<div id="barrasup">
+    <h2 id= "titulofi" style="font-family: Helvetica">FISICA I</h2> <h3 id= "titulopro" style="font-family: Helvetica">Tiro Proyectil</h3>
+</div>
+
+<form id="formDist"> <!--hacer css -->
+    <h4>Ingrese los datos</h4>
+
+
+    Velocidad inicial: <!-- salta error -->
+    <input id="input3" name="vInicial" type="number" value="VelocidadI"
+           onchange="valDistacia(this.value)"> <br>
+    <br>
+    Angulo de salida:
+    <input id="input4" name="aSalida" type="number" value="AnguloS"
+            onchange="valDistacia(this.value)"> <br>
+    <br>
+
+
+    <button id="boton4" type="button" onclick="window.location.href='resultadoDistancia.html'">Calcular</button> <br>
+
+    <br>
+
+
+
+</form>
+
+<div id="barrainf">
+
+    <br>
+    <br>
+    <h5>
+        Nicolas Kobelt - Practico Laboratorio de Computacion II <br>
+    </h5>
+</div>
+
+
+
+</body>
+</html>
