@@ -1,5 +1,3 @@
-
-
 //parte de selector.html //
 
 function sigPagina (nombre) {
@@ -21,28 +19,35 @@ function sigPagina (nombre) {
     }
 }
 
+
+
 // formularioDistancia  //
 
-    function valDistacia () {
-        var el=document.getElementById("formDist").elements;
-        var url = 'resultadoDistancia.html#' + "#" + el["vInicial"].value + "#" + el["aSalida"].value;
-        window.location.replace("resultadoDistancia");
-        
-    }
+function valDistacia () {
+    var el=document.getElementById("formDist").elements;
+
+    var url = 'resultadoDistancia.html#' + "#" + el["vInicial"].value + "#" + el["aSalida"].value;
+    window.location.replace(url);
+
+}
+
+// formulario altura maxima //
 
 
-// formulario Velocidad //
 
 
+
+// cargar resultado en resultadohtml //
+
+function cargarResDist(){
+
+    var myArr = window.location.hash.split('#');
+    var vInicial=(myArr[2]);
+    var aSalida=(myArr[3]);
+
+    rDistancia = (((document.getElementById("vInicial").value ^ 2) * (Math.sin(document.getElementById("aSalida")))) / 9.8);
+    unidad = "m" ;
+    
+    document.getElementById('rD').value = rDistancia + unidad ;
     
 
-
-
-// resultado //
-
-function resultadoVelocidad() {
-    var el = document.getElementById("formulario").elements;
-
-    var url = 'resultado.html#' + el["masa"].value + "#" + el["unidadesMasa"].value + "#" + el["altura"].value;
-    window.location.replace('resultado.html');
-}

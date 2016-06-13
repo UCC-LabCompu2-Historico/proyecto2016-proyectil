@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<link rel="stylesheet" href="formulario.css" type="text/css">
+<link rel="stylesheet" href="formularioDistancia.css" type="text/css">
 <head>
     <script src="formulario.js"></script>
     <meta charset="UTF-8">
@@ -10,23 +10,23 @@
 
 <div id="barrasup">
     <h2 id= "titulofi" style="font-family: Helvetica">FISICA I</h2> <h3 id= "titulopro" style="font-family: Helvetica">Tiro Proyectil</h3>
+
 </div>
+
 
 <form id="formDist"> <!--hacer css -->
     <h4>Ingrese los datos</h4>
 
 
-    Velocidad inicial: <!-- salta error -->
-    <input id="input3" name="vInicial" type="number" value="VelocidadI"
-           onchange="valDistacia(this.value)"> <br>
+    Velocidad inicial:
+    <input id="input3" name="vInicial" type="number" value="VelocidadI"> <br>
     <br>
     Angulo de salida:
-    <input id="input4" name="aSalida" type="number" value="AnguloS"
-            onchange="valDistacia(this.value)"> <br>
+    <input id="input4" name="aSalida" type="number" value="AnguloS"> <br>
     <br>
 
 
-    <button id="boton4" type="button" onclick="window.location.href='resultadoDistancia.html'">Calcular!</button> <br>
+    <button id="boton4" type="button" onclick="valDistacia()">Calcular!</button> <br>
 
     <br>
 
