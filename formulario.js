@@ -6,16 +6,12 @@ function sigPagina (nombre) {
         window.location.replace('formularioDistancia.html');
     }
 
-    else if (nombre == "Ang") {
-        window.location.replace('formulario.html');
-    }
-
-    else if (nombre == "Vinicial") {
-        window.location.replace('formulario.html');
+    else if (nombre == "tiempo") {
+        window.location.replace('formularioTiempo.html');
     }
 
     else if (nombre == "Alt") {
-        window.location.replace('formulario.html');
+        window.location.replace('formularioAltura.html');
     }
 }
 
@@ -34,32 +30,66 @@ function valDistacia () {
 // formulario altura maxima //
 
 
+function valAltura () {
+    var el = document.getElementById("formAlt").elements;
+
+    var url = 'resultadoAltura.html#' + "#" + el["vInicial"].value + "#" + el["aSalida"].value;
+    window.location.replace(url);
+}
+
+//formulario tiempo //
+
+function valtiempo () {
+    var el = document.getElementById("formTiemp").elements;
+
+    var url = 'resultadoTiempo.html#' + "#" + el ["vInicial"].value;
+    window.location.replace(url);
+
+}
+
+
 
 // cargar resultado en resultadohtml //
 
-function cargarResDist(){
+function cargarResDist() {
 
     var myArr = window.location.hash.split('#');
-    var vInicial=(myArr[2]);
-    var aSalida=(myArr[3]);
+    var vInicial = (myArr[1]);
+    var aSalida = (myArr[2]);
 
-    rDistancia = (((document.getElementById("vInicial").value ^ 2) * (Math.sin(document.getElementById("aSalida")))) / 9.8);
-    unidad = "m" ;
-    
-    document.getElementById('rD').value = rDistancia + unidad ;
+    var rDistancia = (((document.getElementById("vInicial").value ^ 2) * (Math.sin(document.getElementById("aSalida")))) / 9.8);
+    var unidad = "m";
+
+    document.getElementById("rDis").value = rDistancia + unidad;
+}
 
 // cargar resultado altura //
 
-    function cargarResDist(){
+    function cargarResAlt() {
 
         var myArr = window.location.hash.split('#');
-        var vInicial=(myArr[2]);
-        var aSalida=(myArr[3]);
+        var vInicial = (myArr[1]);
+        var aSalida = (myArr[2]);
 
-        rDistancia = ((document.getElementById("vInicial").value ^ 2) * ((Math.sin(document.getElementById("aSalida")))^2) / 9.8);
-        unidad = "m" ;
+        var rAltura = ((document.getElementById("vInicial").value ^ 2) * ((Math.sin(document.getElementById("aSalida"))) ^ 2) / 9.8);
+        var unidad = "m";
 
-        document.getElementById('rD').value = rDistancia + unidad ;
+        document.getElementById("rAlt").value = rAltura + unidad ;
+    }
 
+// cargar resultado tiempo // 
+
+
+function cargarResTiemp() {
+
+    var myArr = window.location.hash.split('#');
+    var vInicial = (myArr[1]);
+    var aSalida = (myArr[2]);
+
+    var rTiempo = ((document.getElementById("vInicial").value ) / 9.8)
+    var unidad = "seg";
+
+    document.getElementById("rTiem").value = rTiempo + unidad ;
+}
     
 
