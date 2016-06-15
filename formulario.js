@@ -35,8 +35,6 @@ function valDistacia () {
 
 
 
-
-
 // cargar resultado en resultadohtml //
 
 function cargarResDist(){
@@ -49,5 +47,19 @@ function cargarResDist(){
     unidad = "m" ;
     
     document.getElementById('rD').value = rDistancia + unidad ;
+
+// cargar resultado altura //
+
+    function cargarResDist(){
+
+        var myArr = window.location.hash.split('#');
+        var vInicial=(myArr[2]);
+        var aSalida=(myArr[3]);
+
+        rDistancia = ((document.getElementById("vInicial").value ^ 2) * ((Math.sin(document.getElementById("aSalida")))^2) / 9.8);
+        unidad = "m" ;
+
+        document.getElementById('rD').value = rDistancia + unidad ;
+
     
 
