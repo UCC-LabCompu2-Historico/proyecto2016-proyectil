@@ -22,7 +22,7 @@ function sigPagina (nombre) {
 function valDistacia () {
     var el=document.getElementById("formDist").elements;
 
-    var url = 'resultadoDistancia.html#' + "#" + el["vInicial"].value + "#" + el["aSalida"].value;
+    var url = 'resultadoDistancia.html#' + el["vInicial"].value + "#" + el["aSalida"].value;
     window.location.replace(url);
 
 }
@@ -33,7 +33,7 @@ function valDistacia () {
 function valAltura () {
     var el = document.getElementById("formAlt").elements;
 
-    var url = 'resultadoAltura.html#' + "#" + el["vInicial"].value + "#" + el["aSalida"].value;
+    var url = 'resultadoAltura.html#' + el["vInicial"].value + "#" + el["aSalida"].value;
     window.location.replace(url);
 }
 
@@ -42,7 +42,7 @@ function valAltura () {
 function valtiempo () {
     var el = document.getElementById("formTiemp").elements;
 
-    var url = 'resultadoTiempo.html#' + "#" + el ["vInicial"].value;
+    var url = 'resultadoTiempo.html#' + el ["vInicial"].value;
     window.location.replace(url);
 
 }
@@ -54,10 +54,10 @@ function valtiempo () {
 function cargarResDist() {
 
     var myArr = window.location.hash.split('#');
-    var vInicial = (myArr[1]);
-    var aSalida = (myArr[2]);
+    var vInicial = myArr[1];
+    var aSalida = myArr[2];
 
-    var rDistancia = (((document.getElementById("vInicial").value ^ 2) * (Math.sin(document.getElementById("aSalida")))) / 9.8);
+    var rDistancia = (Math.pow((myArr[1]),2)*(Math.sin(myArr[2]))/9.8)
     var unidad = "m";
 
     document.getElementById("rDis").value = rDistancia + unidad;
@@ -71,7 +71,7 @@ function cargarResDist() {
         var vInicial = (myArr[1]);
         var aSalida = (myArr[2]);
 
-        var rAltura = ((document.getElementById("vInicial").value ^ 2) * ((Math.sin(document.getElementById("aSalida"))) ^ 2) / 9.8);
+        var rAltura = ((Math.pow(myArr[1],2))*(Math.pow(Math.sin(myArr[2]),2)))/9.8;
         var unidad = "m";
 
         document.getElementById("rAlt").value = rAltura + unidad ;
@@ -86,7 +86,7 @@ function cargarResTiemp() {
     var vInicial = (myArr[1]);
     var aSalida = (myArr[2]);
 
-    var rTiempo = ((document.getElementById("vInicial").value ) / 9.8)
+    var rTiempo = (myArr[1])/9.8;
     var unidad = "seg";
 
     document.getElementById("rTiem").value = rTiempo + unidad ;
