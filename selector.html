@@ -2,51 +2,59 @@
 <html lang="es">
 <link rel="stylesheet" href="selector.css" type="text/css">
 <head>
-    <script src="formulario.js"></script>
     <meta charset="UTF-8">
-    <title>Tiro Proyectil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Movimiento Parabolico</title>
 
 </head>
 <body>
 
-<div id="barrasup">
-    <h2 id= "titulofi" style="font-family: Helvetica">FISICA I</h2> <h3 id= "titulopro" style="font-family: Helvetica">Tiro Proyectil</h3>
+<div class="col-md-12" id="headd">
+    <h2 id= "fisica">FÍSICA I</h2> <h3 id= "tiro">Movimiento Parabólico</h3>
 </div>
 
-<div id="divformulario">
-    <br>
-    <br>
+    <div class="row">
 
-    <h4> Indique que desea calcular </h4>
+    <div class="col-md-8" id="Ccentro">
+           <blockquote>
+               <kbd>Introduccón al Movimiento Parabólico</kbd><br>
+            Se denomina movimiento parabólico, al movimiento realizado<br>
+        por cualquier objeto cuya trayectoria describe una parábola.<br>
+        Se corresponde con la trayectoria ideal de un proyectil<br>
+        que se mueve en un medio que no ofrece resistencia al avance<br>
+        y que está sujeto a un campo gravitatorio uniforme.<br>
+        El movimiento parabólico es un ejemplo de un movimiento realizado<br>
+        por un objeto en dos dimensiones o sobre un plano. Puede considerarse<br>
+        como la combinación de dos movimientos que son un movimiento horizontal<br>
+        uniforme y un movimiento vertical acelerado.<br>
+                <footer>Wikipedia</footer>
+           </blockquote>
 
-    <form id="formu" action="">
-        <input type="radio" name="distancia" value="Dtotal"
-               onclick="sigPagina(this.value)">Distancia total recorrida <br>
+    </div>
 
-        <input type="radio" name="tiempo" value="tiempo"
-               onclick="sigPagina(this.value)"> Tiempo total <br>
+    <div class="col-md-4" id="Cder">
+        <img src="http://laplace.us.es/wiki/images/f/f5/Tiro-parabolico-08.png" class="img-rounded" width="340" height="150">
+    </div>
+    </div>
 
-        <input type="radio" name="altura" value="Alt"
-               onclick="sigPagina(this.value)">Altura del proyectil<br>
+    <div class="row">
 
-    </form>
+        <div class="col-md-4" id="datos"></div>
+
+        <div class="col-md-8" id="canvas"></div>
+
+    </div>
 
 
-    <br>
-    <br>
+<div class="col-md-12" id="endd">
 
-</div>
-
-<div id="barrainf">
-
-    <br>
-    <br>
     <h5>
-        Nicolas Kobelt - Practico Laboratorio de Computacion II <br>
+        Nicolás Kobelt - Final Laboratorio de Computación II <br>
     </h5>
 
-
 </div>
-
 </body>
 </html>
