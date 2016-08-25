@@ -40,13 +40,53 @@
     </div>
     </div>
 
+
+    <div class="col-md-12">
+        <h3 style= "align-items: "center""> <kbd>Calculo</kbd> </h3>
+    </div>
+
     <div class="row">
 
-        <div class="col-md-4" id="datos"></div>
+        <div class="col-md-4" id="datos">
+
+            <div id="intro">
+               <h3> Ingreso de datos <br>
+               <small> Para calcular el movimiento parabolico<br>
+               debemos ingresar los siguientes valores en <br>
+               forma numerica y luego le daremos en calcular.</small></h3> <br>
+
+            </div>
+
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="velocidad"> Velocidad:</label>
+                    <div class="col-md-8">
+                        <input type="number" class="form-control" id="velocidad" placeholder="Ingresar Velocidad">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="angulo"> Angulo:</label>
+                    <div class="col-md-8">
+                        <input type="number" class="form-control" id="angulo" placeholder="Ingresar Angulo">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2" for="tiempo"> Tiempo:</label>
+                    <div class="col-md-8">
+                        <input type="number" class="form-control" id="tiempo" placeholder="Ingresar Tiempo">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-success" style="align-content: center">Calcular</button>
+            </form>
+
+        </div>
 
         <div class="col-md-8" id="canvas"></div>
 
     </div>
+
+
 
 
 <div class="col-md-12" id="endd">
