@@ -1,3 +1,14 @@
+#barrasup{
+    background-image: -webkit-linear-gradient(top, #337ab7 20%, #2e6da4 100%);
+    background-image: -o-linear-gradient(top, #337ab7 20%, #2e6da4 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2e6da4));
+    background-image: linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0);
+    background-repeat: repeat-x;
+    -webkit-padding-start: 10px;
+    color: whitesmoke;
+    text-align: center;
+}
 #expl{
     background-color: whitesmoke;
     color: black;
@@ -6,13 +17,7 @@
     font-size: 20px;
     text-align: center;
 }
-#barrasup{
-    color: whitesmoke;
-    background-color: darkmagenta;
-    font-weight: bold;
-    font-style: italic;
-    font-family: Helvetica;
-}
+
 #titulofi{
     text-align: left;
     margin-left: 2%;
@@ -20,47 +25,4 @@
 #titulopro {
     text-align: right;
     margin-right: 2%;
-}
-
-#boton1{
-    background-color: transparent;
-    padding: 15px 25px;
-    font-size: 14px;
-    color: black;
-    border: 2px solid #8b008b
-
-}
-#boton1:hover{
-    background-color: darkmagenta;
-    font-family: helvetica;
-    color: white;
-    padding: 18px 27px;
-    text-aling: center;
-    display: inline-block;
-    font-size: 15px;
-    border: none;
-    background-color: darkmagenta;
-    color: white;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-#boton2{
-    background-color: transparent;
-    padding: 15px 25px;
-    font-size: 14px;
-    color: black;
-    border: 2px solid #006400
-}
-
-#boton2:hover{
-    background-color: darkgreen;
-    font-family: helvetica;
-    color: white;
-    padding: 18px 27px;
-    text-aling: center;
-    display: inline-block;
-    font-size: 15px;
-    border: none;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
 }
