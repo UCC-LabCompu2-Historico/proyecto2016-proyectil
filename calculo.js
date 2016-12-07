@@ -14,7 +14,6 @@ function calc() {
 
     var alcanMax = (velocidad**2)/9.8; //calculo de alcance maximo en x
     var alcanMaxF = alcanMax.toFixed(3); // RESULTADO FINAL truncado a 3 cifras
-
-    var eqTrayect = (Math.tan(anguloRad)*)
+    
 }
 

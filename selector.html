@@ -43,7 +43,7 @@
 
 
     <div class="col-md-12">
-        <h3 style= "align-items: "center""> <kbd>Cálculo</kbd> </h3>
+        <h3 style= "align-items="center"> <kbd>Cálculo</kbd> </h3>
     </div>
 
     <div class="row">
@@ -79,6 +79,8 @@
                 </div>
 
                 <button type="button" class="btn btn-success" style="align-content: center" onclick="calc()">Calcular</button>
+                <br>
+                <br>
             </form>
 
         </div>
@@ -89,9 +91,21 @@
 
 
     <div class="row">
-        <div class="control-label col-md-1" for="distancia">  </div>
+        <div class="col-md-10" id="resultados">
 
-    </div>
+            <label class="control-label col-md-2" for="AlturaMax"> Altura maxima: </label>
+                <div class="col-md-1">
+                    <output type="number" id="AlturaMax"></output>
+                </div>
+        <label class="control-label col-md-2" for="distancia"> Distancia: </label>
+                <div class="col-md-1">
+                    <output type="number" id="distancia"></output>
+                </div>
+
+
+
+        </div><!--cierre res-->
+    </div><!--cierre row-->
 
 
 <div class="col-md-12" id="endd">
@@ -101,5 +115,6 @@
     </h5>
 
 </div>
+
 </body>
 </html>
