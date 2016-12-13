@@ -79,8 +79,7 @@
                 </div>
 
                 <button type="button" class="btn btn-success" style="align-content: center" onclick="calc()">Calcular</button>
-                <br>
-                <br>
+
             </form>
 
         </div>
@@ -93,16 +92,22 @@
     <div class="row">
         <div class="col-md-10" id="resultados">
 
-            <label class="control-label col-md-2" for="AlturaMax"> Altura maxima: </label>
-                <div class="col-md-1">
-                    <output type="number" id="AlturaMax"></output>
-                </div>
-        <label class="control-label col-md-2" for="distancia"> Distancia: </label>
-                <div class="col-md-1">
-                    <output type="number" id="distancia"></output>
+            <label class="control-label col-md-2" for="altMax"> Altura maxima: </label>
+
+            <label class="control-label col-md-2" for="alcanMax"> Distancia: </label>
+            <br>
+
+            <div class="col-md-10" id="result">
+
+                <div class="col-md-3">
+                    <input type="text" id="altMax" disabled></input>
                 </div>
 
+                <div class="col-md-3">
+                    <input type="text" id="alcanMax" disabled></input>
+                </div>
 
+            </div>
 
         </div><!--cierre res-->
     </div><!--cierre row-->
