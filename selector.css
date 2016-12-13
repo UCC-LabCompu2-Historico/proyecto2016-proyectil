@@ -60,6 +60,9 @@
     margin-bottom: 5%;
 }
 
+#can {
+    align-content: center;
+}
 
 #endd{
     background-image: -webkit-linear-gradient(top, #337ab7 20%, #2e6da4 100%);
