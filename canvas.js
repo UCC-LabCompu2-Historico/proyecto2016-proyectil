@@ -4,24 +4,16 @@
 
 
 //funcion para tomar valores ingresados
+
 function miDibujo() {
 
-    var myCanvas = document.getElementById("canvas");
-    var ctx = myCanvas.getContext("2d");
-    var X = alcanMax;
-    var Y = altMax;
+    var elemento = document.getElementById("canvas");
+    canvas = elemento.getContext("2d");
 
-    }
-//intento de animacion 
-    function mAnimar (){
+    canvas.beginPath();
+    canvas.moveTo(50, 300);
+    canvas.quadraticCurveTo(100, 100, 50, 50);
+    canvas.stroke();
+    canvas.strokeStyle="#f5f5f5";
 
-        myCanvas.width= myCanvas.width;
-        ctx.beginPath();
-        ctx.arc(X,Y,0,2*Math.PI);
-        ctx.moveTo(X,0);
-        ctx.lineTo(X,Y);
-        ctx.fillStyle = 'black';
-        ctx.fill();
-        ctx.stroke();
-        ctx.closePath();
     }
