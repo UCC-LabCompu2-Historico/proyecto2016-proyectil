@@ -16,6 +16,11 @@ function calc() {
     var alcan = (velocidad**2)/9.8; //calculo de alcance maximo en x
     var alcanMax = alcan.toFixed(3); // RESULTADO FINAL truncado a 3 cifras
     document.getElementById("alcanMax").value = alcanMax;
+    
+
+
+
+    miDibujo(alcanMax,altMax, velocidad,angulo,tiempo);
 
 }
 
