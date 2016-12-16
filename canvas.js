@@ -7,13 +7,13 @@
 
 function miDibujo() {
 
-    var elemento = document.getElementById("canvas");
-    canvas = elemento.getContext("2d");
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
 
-    canvas.beginPath();
-    canvas.moveTo(50, 300);
-    canvas.quadraticCurveTo(100, 100, 50, 50);
-    canvas.stroke();
-    canvas.strokeStyle="#f5f5f5";
+    ctx.beginPath();
+    ctx.moveTo(50, 300);
+    ctx.quadraticCurveTo(100, 100, 50, 50);
+    ctx.stroke();
+    ctx.strokeStyle="#f5f5f5";
 
     }
