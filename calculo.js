@@ -9,18 +9,18 @@ function calc() {
 
 
     var alt = ((velocidad**2)*(Math.sin(angulo*Math.PI/180)))/(2*9.8); //calculo de la altura maxima del objeto
-    var altMax = alt.toFixed(3); //RESULTADO FINAL truncado a 3 cifras
+    var altMax = alt.toFixed(2); //RESULTADO FINAL truncado a 3 cifras
     document.getElementById("altMax").value = altMax;
 
 
     var alcan = (velocidad**2)/9.8; //calculo de alcance maximo en x
-    var alcanMax = alcan.toFixed(3); // RESULTADO FINAL truncado a 3 cifras
+    var alcanMax = alcan.toFixed(2); // RESULTADO FINAL truncado a 3 cifras
     document.getElementById("alcanMax").value = alcanMax;
     
 
 
 
-    miDibujo(alcanMax,altMax, velocidad,angulo,tiempo);
+    miDibujo(alcanMax, altMax, velocidad, angulo, tiempo);
 
 }
 

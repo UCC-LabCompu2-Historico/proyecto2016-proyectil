@@ -8,7 +8,7 @@
 var t=0;
 
 
-function miDibujo(alcanMax, altMax, velocidad,angulo,tiempo) {
+function miDibujo(alcanMax, altMax, velocidad, angulo, tiempo) {
 
 
     var canvas = document.getElementById("canvas");
@@ -23,8 +23,8 @@ function miDibujo(alcanMax, altMax, velocidad,angulo,tiempo) {
     ctx.closePath();
     ctx.fill();
 
-    tmax= alcanMax/vX;
-    t = t + tmax/500;
+    tmax = alcanMax/vX;
+    t = t + tmax/400;
 
     var alcance = ((vX*t)*550)/alcanMax;
 
